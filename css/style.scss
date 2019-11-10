@@ -1,18 +1,77 @@
+$logoBackground: #fff;
+$logoStrickColor: blue;
+
 .logo {
   .kids {
     .kid {
+      width: 168px;
+      border: 1px solid red;
+      position: relative;
+      background: url(../https___logosource_03.png) no-repeat left top;
+      height: 240px;
       .head {
-        width: 28px;
-        height: 28px;
+        width: 59px;
+        height: 59px;
         display: block;
-        border: 10px solid #a92365;
+        margin: 0 24px 0 46px;
+        border: 19px solid blue;
         border-radius: 50%;
       }
-      .hand {
+      .kid-body {
         width: 37px;
-        height: 9px;
-        border: 10px solid #a92365;
+        position: absolute;
+        height: 100px;
+        left: 59px;
+        background-color: $logoBackground;
+        border: 19px solid $logoStrickColor;
+      }
+
+      .hand {
+        border: 19px solid $logoStrickColor;
+        position: absolute;
         display: block;
+        background-color: $logoBackground;
+
+        &.right {
+          width: 53px;
+          transform: skew(0deg, 43deg);
+          border-width: 0px 0 25px 0;
+          right: 0;
+          top: 128px;
+          height: 30px;
+          &:after {
+            content: "";
+            -webkit-transform: skew(0deg, 2deg);
+            transform: skew(0deg, 4deg);
+            width: 63px;
+            height: 27px;
+            background: $logoStrickColor;
+            display: block;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            border-radius: 19% 0 0 0;
+          }
+        }
+        &.left {
+          width: 59px;
+          transform: skew(0deg, -42deg);
+          border-width: 0px 0 25px 19px;
+          left: 0;
+          top: 143px;
+          height: 18px;
+          &:after {
+            content: "";
+            width: 90px;
+            height: 27px;
+            background: $logoStrickColor;
+            display: block;
+            position: absolute;
+            top: -26px;
+            left: -19px;
+            border-radius: 0 27% 0 0;
+          }
+        }
       }
     }
   }
