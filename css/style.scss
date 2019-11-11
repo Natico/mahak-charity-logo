@@ -1,13 +1,16 @@
 $logoBackground: #fff;
-$logoStrickColor: blue;
+$logoStrokeColor: blue;
 
 .logo {
+  width: 668px;
+  height: 601px;
+  border: 1px solid red;
+  background: url(../https___logosource_03.png) no-repeat left top;
   .kids {
-    .kid {
+    margin: 0 83px 0 87px;
+    .kid-left {
       width: 168px;
-      border: 1px solid red;
       position: relative;
-      background: url(../https___logosource_03.png) no-repeat left top;
       height: 240px;
       .head {
         width: 59px;
@@ -22,12 +25,14 @@ $logoStrickColor: blue;
         position: absolute;
         height: 100px;
         left: 59px;
-        background-color: $logoBackground;
-        border: 19px solid $logoStrickColor;
+        background-color: #fff;
+        border: 10px solid blue;
+        border-width: 5px 19px 0 19px;
+        top: 96px;
+        border-radius: 10px 10px 0 0;
       }
-
       .hand {
-        border: 19px solid $logoStrickColor;
+        border: 19px solid $logoStrokeColor;
         position: absolute;
         display: block;
         background-color: $logoBackground;
@@ -45,7 +50,7 @@ $logoStrickColor: blue;
             transform: skew(0deg, 4deg);
             width: 63px;
             height: 27px;
-            background: $logoStrickColor;
+            background: $logoStrokeColor;
             display: block;
             position: absolute;
             top: -20px;
@@ -64,12 +69,69 @@ $logoStrickColor: blue;
             content: "";
             width: 90px;
             height: 27px;
-            background: $logoStrickColor;
+            background: $logoStrokeColor;
             display: block;
             position: absolute;
             top: -26px;
             left: -19px;
             border-radius: 0 27% 0 0;
+          }
+        }
+      }
+      .leg {
+        // border: 19px solid $logoStrokeColor;
+        position: absolute;
+        display: block;
+        background-color: $logoBackground;
+        &.left {
+          width: 59px;
+          transform: skew(0deg, -42deg);
+          // border-width: 0px 0 25px 19px;
+          left: 0;
+          top: 143px;
+          height: 18px;
+          &:after {
+            content: "";
+            width: 90px;
+            height: 27px;
+            background: $logoStrokeColor;
+            display: block;
+            position: absolute;
+            top: -26px;
+            left: -19px;
+            border-radius: 0 27% 0 0;
+          }
+          &:before {
+            content: "";
+            width: 90px;
+            height: 27px;
+            background: $logoStrokeColor;
+            display: block;
+            position: absolute;
+            top: -26px;
+            left: -19px;
+            border-radius: 0 27% 0 0;
+          }
+        }
+        &.right {
+          width: 53px;
+          transform: skew(0deg, 43deg);
+          border-width: 0px 0 25px 0;
+          right: 0;
+          top: 128px;
+          height: 30px;
+          &:after {
+            content: "";
+            -webkit-transform: skew(0deg, 2deg);
+            transform: skew(0deg, 4deg);
+            width: 63px;
+            height: 27px;
+            background: $logoStrokeColor;
+            display: block;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            border-radius: 19% 0 0 0;
           }
         }
       }

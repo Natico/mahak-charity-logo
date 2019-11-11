@@ -1,12 +1,21 @@
-.logo .kids .kid {
-  width: 168px;
+.logo {
+  width: 668px;
+  height: 601px;
   border: 1px solid red;
-  position: relative;
   background: url(../https___logosource_03.png) no-repeat left top;
+}
+
+.logo .kids {
+  margin: 0 83px 0 87px;
+}
+
+.logo .kids .kid-left {
+  width: 168px;
+  position: relative;
   height: 240px;
 }
 
-.logo .kids .kid .head {
+.logo .kids .kid-left .head {
   width: 59px;
   height: 59px;
   display: block;
@@ -15,23 +24,26 @@
   border-radius: 50%;
 }
 
-.logo .kids .kid .kid-body {
+.logo .kids .kid-left .kid-body {
   width: 37px;
   position: absolute;
   height: 100px;
   left: 59px;
   background-color: #fff;
-  border: 19px solid blue;
+  border: 10px solid blue;
+  border-width: 5px 19px 0 19px;
+  top: 96px;
+  border-radius: 10px 10px 0 0;
 }
 
-.logo .kids .kid .hand {
+.logo .kids .kid-left .hand {
   border: 19px solid blue;
   position: absolute;
   display: block;
   background-color: #fff;
 }
 
-.logo .kids .kid .hand.right {
+.logo .kids .kid-left .hand.right {
   width: 53px;
   -webkit-transform: skew(0deg, 43deg);
           transform: skew(0deg, 43deg);
@@ -41,7 +53,7 @@
   height: 30px;
 }
 
-.logo .kids .kid .hand.right:after {
+.logo .kids .kid-left .hand.right:after {
   content: "";
   -webkit-transform: skew(0deg, 2deg);
   transform: skew(0deg, 4deg);
@@ -55,7 +67,7 @@
   border-radius: 19% 0 0 0;
 }
 
-.logo .kids .kid .hand.left {
+.logo .kids .kid-left .hand.left {
   width: 59px;
   -webkit-transform: skew(0deg, -42deg);
           transform: skew(0deg, -42deg);
@@ -65,7 +77,7 @@
   height: 18px;
 }
 
-.logo .kids .kid .hand.left:after {
+.logo .kids .kid-left .hand.left:after {
   content: "";
   width: 90px;
   height: 27px;
@@ -75,5 +87,68 @@
   top: -26px;
   left: -19px;
   border-radius: 0 27% 0 0;
+}
+
+.logo .kids .kid-left .leg {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+}
+
+.logo .kids .kid-left .leg.left {
+  width: 59px;
+  -webkit-transform: skew(0deg, -42deg);
+          transform: skew(0deg, -42deg);
+  left: 0;
+  top: 143px;
+  height: 18px;
+}
+
+.logo .kids .kid-left .leg.left:after {
+  content: "";
+  width: 90px;
+  height: 27px;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: -19px;
+  border-radius: 0 27% 0 0;
+}
+
+.logo .kids .kid-left .leg.left:before {
+  content: "";
+  width: 90px;
+  height: 27px;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: -19px;
+  border-radius: 0 27% 0 0;
+}
+
+.logo .kids .kid-left .leg.right {
+  width: 53px;
+  -webkit-transform: skew(0deg, 43deg);
+          transform: skew(0deg, 43deg);
+  border-width: 0px 0 25px 0;
+  right: 0;
+  top: 128px;
+  height: 30px;
+}
+
+.logo .kids .kid-left .leg.right:after {
+  content: "";
+  -webkit-transform: skew(0deg, 2deg);
+  transform: skew(0deg, 4deg);
+  width: 63px;
+  height: 27px;
+  background: blue;
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-radius: 19% 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */
